@@ -1,0 +1,13 @@
+import numpy as np
+
+# Tạo ma trận 100x100 với các số nguyên ngẫu nhiên từ 1 đến 9
+# Hàm randint với tham số (1, 10) sẽ lấy các giá trị từ 1 đến 9
+matrix = np.random.randint(1, 10, size=(100, 100))
+
+# Tính tổng các phần tử trên đường chéo chính bằng hàm np.trace()
+diagonal_sum = np.trace(matrix)
+
+# Bạn cũng có thể dùng cách lấy đường chéo rồi tính tổng:
+# diagonal_sum = np.sum(np.diagonal(matrix))
+
+print(f"Tổng các phần tử trên đường chéo chính của ma trận 100x100 là: {diagonal_sum}")
