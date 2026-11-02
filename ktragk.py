@@ -60,7 +60,7 @@ def kqua_e(A):
     
     for i, count in enumerate(prime_counts):
         if count == max_primes:
-            print(f"row {i + 1}: {A[i]},  {count}")
+            print(f"row {i + 1}: {A[i]}, {count}")
 print('e)')
 kqua_e(A)
 
