@@ -42,7 +42,7 @@ def is_prime(n):
 A_flat = A.flatten()
 d = np.array([x for x in A_flat if is_prime(x)])
 n = len(d)
-i_indices = np.arange(1, n + 1)
+i = np.arange(1, n + 1)
 S = np.sum(i_indices * d)
 
 print('d)', S)
