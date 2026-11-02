@@ -73,5 +73,6 @@ run_lengths = np.array([longest_odd(row) for row in A])
 max_ovr = np.max(run_lengths)
 kqua_f = np.where(run_lengths == max_ovr)[0]
 for idx in kqua_f:
+    print("f")
     print(f'hang: {idx}')
     print(f'du lieu: {A[idx]}')
