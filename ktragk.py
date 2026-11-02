@@ -43,6 +43,6 @@ A_flat = A.flatten()
 d = np.array([x for x in A_flat if is_prime(x)])
 n = len(d)
 i = np.arange(1, n + 1)
-S = np.sum(i_indices * d)
+S = np.sum(i * d)
 
 print('d)', S)
